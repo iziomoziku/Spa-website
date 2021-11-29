@@ -1,0 +1,710 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --page-bg-color: #F1F1F1;
+    --primary-color: #0998AB;
+    --font-color: #000000;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 7rem);
+    line-height: 1.2;
+    background-color: var(--page-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title--h1 {
+    font-size: clamp(2rem, 3.5vw, 7rem);
+    text-align: center;
+}
+
+.title--h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 5rem);
+}
+
+.title--h3  {
+    font-size: clamp(1.2rem, 1.5vw, 3rem);
+    font-weight: 600;
+}
+
+.logo {
+    width: 15%;
+    max-width: 400px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    border: none;
+    padding: 0.5em;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* must be placed after .container */
+.section-margin {
+    margin-top: 3.25rem;
+}
+
+.small-blocked {
+    display: none;
+}
+
+.middle-layer {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Massage/Body_massage.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    width: 100%;
+    min-height: 200px;
+}
+
+/* ---------------------- */
+/*          Form          */
+/* ---------------------- */
+
+.form {
+    background-color: #dfdfdf5d;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.form-title {
+    margin-top: 1em;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 95%;
+    padding: 1em;
+}
+
+.form-checkbox {
+    margin-left: 15px;
+}
+
+.form--modifier {
+    padding-bottom: 1em;
+}
+
+.form-btn {
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    text-align: center;
+    display: block;
+}
+
+.form--input {
+    background-color: #808080;
+    border: none;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+}
+
+/* .form--label {
+    margin-top: 1em;
+} */
+
+
+
+/* ---------------------- */
+/*          Footer          */
+/* ---------------------- */
+
+.footer {
+    background-color: #DDDDDD;
+    padding: 1em 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.footer-navigation, .footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--bold {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.footer--modifier {
+    margin-bottom: 1em;
+    border: none;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer-btn {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em 2em;
+    display: block;
+}
+
+.footer-form {
+    margin-bottom: 1em;
+}
+
+/* ------------------------- */
+/*          Sign up          */
+/* ------------------------- */
+
+.sign-up {
+    background-color: #bdbdbd;
+    width: 90%;
+    max-width: 400px;
+    margin: 1em auto;
+    padding: 1em 0.5em;
+} 
+
+.sign-up-title {
+    text-align: left;
+}
+
+.sign-up-wrapper {
+    margin-bottom: 1em;
+}
+
+.sign-up-input {
+    margin-top: 0.25em;
+    border: none;
+    width: 100%;
+    min-height: 2em;
+    background-color: white;
+    color: black;
+    padding: 0.5em;
+}
+
+.sign-up-btn {
+    width: 100%;
+}
+
+
+
+/* ------------------------- */
+/*          Header         */
+/* ------------------------- */
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+} 
+
+.header-hamburger {
+    width: 10%;
+    max-width: 500px;
+}
+
+.header-nav-wrapper {
+    background-color: rgb(178, 205, 125);
+    max-width: 250px;
+    width: 60%;
+    padding: 1em 0.5em;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -66%;
+    
+    display: none;
+    /* flex-direction: column; */
+    /* gap: 12em; */
+    
+}
+
+.header-close {
+    margin: 0;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.header-nav {
+    display: flex;
+    padding: 1em 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 0.5em;   
+}
+
+.header-btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5em;
+    color: white;
+    max-width: 100px;
+}
+
+
+
+
+
+
+
+/* .services-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .services-container:hover, .services-dropdown:hover {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-btn {
+        background-color: inherit;
+        border: none;
+        font-size: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    .services-dropdown {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding: 0.2em;
+    }
+
+    .mainService {
+        margin-bottom: 0.25em;
+    }
+
+    .mainService:hover {
+        background-color: #ddd;
+        padding: 0.125em;
+        text-decoration: underline;
+    } */
+
+/* ------------------------- */
+/*          Hero             */
+/* ------------------------- */
+
+.hero {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/pexels-elina-fairytale-3865792.jpg);
+    /* background-position:top; */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh;
+    padding: 2em 0;
+}
+
+.hero-subtitle {
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 5rem);
+}
+
+.hero-btn {
+    display: block;
+    margin: 0 auto;
+    /* font-size: clamp(1.125rem, 2vh, 5rem); */
+}
+
+.hero-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------    */
+/*          Benefit             */
+/* -------------------------   */
+
+.benefit-content {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    flex-direction: column;
+    /* margin: 1em 0; */
+}
+
+.benefit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 1em;
+}
+
+.content--description {
+    text-align: center;
+}
+
+/* -------------------------    */
+/*          services             */
+/* -------------------------   */
+
+.service-content {
+    margin: 1em 0;
+    padding: 0.5em 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    color: white;   
+}
+
+.service--btn {
+    margin-bottom: 1em;
+    font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.service-content-description {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.service-mani-pedi {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Manicure:pedicure/pedi.jpeg);
+    background-position:center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    min-height: 250px;
+}
+
+.service-massage {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/pexels-anthony-shkraba-6076124.jpg);
+    /* background-position:10% -150%; */
+    background-position:center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    min-height: 250px;
+}
+
+.service-facial {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/Facial.jpeg);
+    /* background-position:10% -170%; */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    min-height: 250px;
+}
+
+/*   -------------------------    */
+/*          referral             */
+/*   -------------------------   */
+
+.referral-content {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 1em;
+
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.referral-img {
+    width: 15%;
+    max-width: 100px;
+}
+
+.referral-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.referral-name {
+    font-weight: 700;
+}
+
+.referral-credential {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.referral-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 1em;
+}
+
+/*   ------------------------- */
+/*      about us section   */
+/*   -------------------------   */
+
+/* .about-us {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.about-us-desc {
+    max-width: 50ch;
+}
+
+.about-us-img {
+    min-height: 400px;
+    max-width: 400px;
+} */
+
+/*   ------------------------- */
+/*      about referral section   */
+/*   -------------------------   */
+
+.about-ref-wrapper {
+    background: rgb(48, 48, 48) url(pic/Images/About/Diffuser.jpg);
+    /* background-position:10% -170%; */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    /* min-height: 250px; */
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.about-ref-toggle-wrapper {
+    display: flex;
+    gap: 0.25em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.about-ref-toggle {
+    /* background-color: #000000; */
+    background-color: #8DC442;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.about-ref-toggle-on {
+    background-color: #c2dfb8;
+}
+
+
+
+
+/*   -------------------------    */
+/*          CTA                  */
+/*   -------------------------   */
+
+.CTA {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/pexels-burst-374148.jpg);
+    /* background-position:10% -170%; */
+    background-position:center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    min-height: 250px;
+    color: white;
+}
+
+.about-CTA {
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/About/Bathroom_robe.jpg);
+    background-position:center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    min-height: 250px;
+    color: white;
+}
+
+.CTA-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 1em 0;
+}
+
+.CTA-title {
+    text-align: left;
+}
+
+.CTA-btn {
+    display: block;
+    align-self: baseline;
+    margin-bottom: 0.5em;
+    font-size: clamp(1rem, 2vw, 4rem);
+}
+
+
+
+/*   ------------------------- */
+/*   Meet our specialists       */
+/*   -------------------------   */
+
+
+.specialists-img-wrapper {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+}
+
+.specialists-img {
+    width: 30%;
+    max-width: 400px;
+}
+
+.specialists-contents-wrapper {
+    background-color: #DDDDDD;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+}
+
+.specialists-name-wrapper {
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 0.1em;
+    justify-content: center;
+}
+
+.specialists-name {
+    width: 33.3%;
+    /* overflow-x:auto; */
+
+    text-align: center;
+    padding: 0.7em;
+    font-weight: 600;
+    background-color: #595959;
+    color: white;
+    border: none; 
+}
+
+.specialists-content-on {
+    background-color: #DDDDDD;
+    color: black;
+}
+
+.specialists-img-on {
+    border: 2px solid #22DC56;
+    border-radius: 50%;
+}
+
+
+/*   ======================== */
+/*   Massage Page              */
+/*   ========================   */
+
+
+/*   ------------------------- */
+/*   Fees section             */
+/*   -------------------------   */
+
+.fee-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.fee-container {
+    border: 1px solid black;
+    padding: 1em;
+    max-width: 300px;
+} 
+
+.fee-price {
+    background-color: #6B6B6B;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2.5vh, 7rem);
+    padding: 0.5em 1em;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fee-btn {
+    display: block;
+    width: 100%;
+}
+
+
+/*   ======================== */
+/*   My-info page             */
+/*   ========================   */
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .info-btn {
+
+}
+
+.info-my-info {
+
+}
+
+.info-booking {
+
+} */
+
+/* .info-appiontment {
+
+} */
