@@ -693,14 +693,43 @@ a {
     flex-wrap: wrap;
 }
 
-/* .info-btn {
-
+.info-container {
+    margin: 1em 0;
 }
+
+.info-btn {
+    border: none;
+    padding: 0.5em 1em;
+    background-color: #BBBBBB;
+}
+
+.info-edit {
+    padding: 0.5em 0.5em;
+    background-color: #089247;
+}
+
+.info-text {
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.customers-info-title {
+    text-align: left;
+}
+
+.customers-info-wrapper {
+    background-color: #DFDFDF;
+    padding: 1em;
+    padding-top: 0.2em;
+    margin-top: 1em;
+}
+
 
 .info-my-info {
-
+    background-color: var(--primary-color);
 }
 
+/*
 .info-booking {
 
 } */
