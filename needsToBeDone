@@ -1,17 +1,34 @@
-Header
-    Add
-        * Make the header sticky so it stays at the top always 
-    Remove 
-    Fix
-        * CSS is all over the place
+Home Page 
+    * inlcude a link on Facial services
+    * icons missing
+About page 
+Service page 
+    * Massage Page 
+    * Facial page
+    * Mani And pedi 
+Sign up 
+Log in 
 
-Sign-up 
+
+Order of things to do 
+    * hero page
+    * fix every page issue 
+    * Add a facial page 
+
+
+
+
+Home Page
     Add
-        * Already a member? Login 
+        * icons missing on the benefits section
+        * a slide animation informing cutomers to slide left when navigating on
+            the "what customers are saying about us"
     Remove
-    Fix
+        * Change the hero picture 
+    Fix 
+        * hero section
 
-Home 
+About page 
     Add
         * icons missing on the benefits section
         * a way to tell customers to slide when they get to the referral section
@@ -19,5 +36,72 @@ Home
     Fix 
         * hero section
 
+Massage page 
+    Add
+        * icons missing on the benefits section
+        * a way to tell customers to slide when they get to the referral section
+    Remove
+    Fix 
+        * Hero bg picture 
+
+Manicure and pedicure page
+    Add
+        * icons missing on the benefits section
+        * a way to tell customers to slide when they get to the referral section
+        * proper pictures 
+    Remove
+    Fix 
+        * "what our customers are saying" buttons ain't working 
+        * Hero bg picture 
+        * Margin between sections 
+
+Facial Page 
+    * Make this page 
+
+Sign-up 
+    Add
+        * Already a member? Login 
+        * Header 
+    Remove
+    Fix
+        * Shorten the fields 
+
+Log-in page 
+    Add
+        * header
+        * Footer
+    Remove
+    Fix
+
+
+
+
+OTHER MINI THINGS TO DO 
+
+Context 
+    Add 
+        * Add context to your page 
+
+Header
+    Add
+        * Make the header sticky so it stays at the top always 
+        * a fixed header
+    Remove 
+    Fix
+        * CSS is all over the place
+
+Icons
+    * Add icons 
+
+Forms 
+    * Get the forms to work 
+
+Footer 
+    * Make it a drop down 
+
 Side-bar Nav
     * Fix the service
+
+
+
+

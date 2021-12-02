@@ -229,6 +229,8 @@ a {
     margin: 0;
     width: 100%;
     padding: 0.5em 0;
+
+    /* position:fixed; */
 }
 
 .header-logo {
@@ -280,49 +282,56 @@ a {
     max-width: 100px;
 }
 
+/* ------------------------- */
+/* Services Drop down menu   */
+/* ------------------------- */
 
+.dropbtn {
+    background-color: inherit;
+    color: black;
+    font-size: inherit;
+    border: none;
+}
 
+    /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+    /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
+    /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
+    /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
-/* .services-container {
-        position: relative;
-        display: inline-block;
-    }
+    /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-    .services-container:hover, .services-dropdown:hover {
-        display: flex;
-        flex-direction: column;
-    }
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #98c499;
+}
 
-    .services-btn {
-        background-color: inherit;
-        border: none;
-        font-size: inherit;
-        margin: 0;
-        padding: 0;
-    }
-
-    .services-dropdown {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        padding: 0.2em;
-    }
-
-    .mainService {
-        margin-bottom: 0.25em;
-    }
-
-    .mainService:hover {
-        background-color: #ddd;
-        padding: 0.125em;
-        text-decoration: underline;
-    } */
 
 /* ------------------------- */
 /*          Hero             */
@@ -330,6 +339,7 @@ a {
 
 .hero {
     background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/pexels-elina-fairytale-3865792.jpg);
+    
     /* background-position:top; */
     background-position: center;
     background-size: cover;
@@ -729,11 +739,39 @@ a {
     background-color: var(--primary-color);
 }
 
-/*
-.info-booking {
+/*   ======================== */
+/*   login page             */
+/*   ========================   */
 
-} */
+.login {
+    background-color: #A2ACAF;
+}
 
-/* .info-appiontment {
+.login-text {
+    text-align: center;
+}
 
-} */
+.login-link {
+    font-weight:600;
+    text-decoration: underline;
+}
+
+.login-btn,
+.login-pwd,
+.login-email {
+    border: none;
+    padding: 1em 1em;
+    margin: 0.5em 0;
+    width: 100%;
+}
+
+.login-btn {
+    padding: 0.2em 1em;
+}
+
+.login-wrapper {
+    background-color: #DFDFDF; 
+    margin: 1em 0;
+    padding: 1em;
+    padding-top: 0.2em;
+}
