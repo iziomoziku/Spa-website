@@ -53,14 +53,47 @@ function header() {
     });
 }
 
+function darkHeader() {
+    $(".darkHeader-placeholder").load("darkHeader.html", () => {
+        const ham = document.querySelector('.header-hamburger')
+        const headerWrapper = document.querySelector('.header-nav-wrapper')
+        const close = document.querySelector('.header-close')
+    
+        function navigation() {
+            headerWrapper.style.right = '0'
+            headerWrapper.style.display = 'flex'
+        }
+    
+        function closeNavigation() {
+            headerWrapper.style.right = '-66%'
+            headerWrapper.style.display = 'none'
+        }
+    
+        if (ham) {
+            ham.addEventListener('click', navigation)
+        }
+    
+        if (close) {
+            close.addEventListener('click', closeNavigation)
+        }
+    });
+}
+
+header()
+darkHeader()
+
+// $(".reference-placeholder").load("reference.html")
+
 
 function about() {
     const title = document.querySelector('.hero-title')
     const description = document.querySelector('.hero-subtitle')
+    const bg_img = document.querySelector('.hero')
 
-    title.innerText = 'About page'
-    description.innerText = 'Lorem ipsum dolor sit amet, consectetur \
-    adipiscing elit. Gravida mattis ullamcorper neque sapien ultrices vulputate tincidunt quam.'
+    bg_img.style.background = 'rgba(31, 30, 30, 0.822) url(pic/Images/About/About\ hero.jpg);'
+    title.innerText = 'Your beauty, comfort, and satisfaction are our top priority'
+    description.innerText = 'Come relax in our clean hygenic environment \
+    while we pamper and take good care of you. '
 
 }
 
@@ -84,8 +117,6 @@ function mani_pedi() {
 
 }
 
-// console.log(document.title)
-
 
 
 $(".footer-placeholder").load("footer.html")
@@ -97,18 +128,21 @@ function specialist(e) {
 
     const specialists_content = document.querySelector('.specialists-content')
 
-    const jordyn = 'Hey I am Jordyn lorem ipsum dolor sit amet, consectetur adipiscing elit. At leo integer \
-                    cras aliquet phasellus nunc. Nunc, faucibus urna integer ac pulvinar \
-                    egestas velit cursus. Leo at fringilla non magna vestibulum sed id diam. \
-                    Id montes, nisi, lorem tempor faucibus diam tincidunt posuere quis. '
-    const jennifer = 'Hey I am Jennifer lorem ipsum dolor sit amet, consectetur adipiscing elit. At leo integer \
-                    cras aliquet phasellus nunc. Nunc, faucibus urna integer ac pulvinar \
-                    egestas velit cursus. Leo at fringilla non magna vestibulum sed id diam. \
-                    Id montes, nisi, lorem tempor faucibus diam tincidunt posuere quis.'
-    const cassidy = 'Hey I am Cassidy lorem ipsum dolor sit amet, consectetur adipiscing elit. At leo integer \
-                    cras aliquet phasellus nunc. Nunc, faucibus urna integer ac pulvinar \
-                    egestas velit cursus. Leo at fringilla non magna vestibulum sed id diam. \
-                    Id montes, nisi, lorem tempor faucibus diam tincidunt posuere quis.'
+    const jordyn = 'Jordyn graduated from Marvel Beauty School with a aesthetics \
+                    and makeup artistry diploma and completed her certification in Medical Esthetics \
+                    from the Canadian Beauty College. After six years of skin care, Jordyn pursued her \
+                    passion for relaxation massage and has been happily serving clients in the field for eight years.  '
+    const jennifer = 'Cassidy has always been interested in the health care field and has been working \
+                    and volunteering alongside several health care practitioners for the past 10 years. Her studies \
+                    included skin theory, anatomy, chemical peels, microdermabrasion, facials and relaxation massage. \
+                    She was passionate about her future career and ensured she learned all forms of esthetics. She \
+                    comleted her Esthetician diploma from Lambton College'
+
+    const cassidy = 'Jennifer is a highly motivated, enthusiastic and very personable Health \
+                    Care Practitioner who has been in practice since 2010.  Jennifer graduated from the University \
+                    of Toronto with a Bachelor’s Degree in Physical and Health Education. Further to her practice in \
+                    Kinesiology, she pursued a career in Massage Therapy, graduating from Sutherland Chan School of \
+                    Massage Therapy'
 
     if (e.target.value === 'Jordyn') {
         specialists_content.innerText = jordyn
@@ -146,9 +180,21 @@ function specialist(e) {
 
 }
 
-specialist_1.addEventListener('click', specialist)
-specialist_2.addEventListener('click', specialist)
-specialist_3.addEventListener('click', specialist)
+
+
+
+
+if (specialist_1) {
+    specialist_1.addEventListener('click', specialist)
+}
+
+if (specialist_2) {
+    specialist_2.addEventListener('click', specialist)
+}
+
+if (specialist_3) {
+    specialist_3.addEventListener('click', specialist)
+}
 
 // specialist_img_3.addEventListener('click', specialist)
 // specialist_img_3.addEventListener('click', specialist)
@@ -161,21 +207,24 @@ function cta(e) {
     const referral_img = document.querySelector('.referral-img')
 
 
-    const about_ref_toggle_1_name = 'Jannette Holland'
-    const about_ref_toggle_2_name = 'Jason Curtis'
-    const about_ref_toggle_3_name = 'Lennard King'
+    const about_ref_toggle_1_name = 'Marry Curtis'
+    const about_ref_toggle_2_name = 'Josephine Carrie'
+    const about_ref_toggle_3_name = 'Abby King'
 
-    const about_ref_toggle_1_company = 'XYZ Corp'
-    const about_ref_toggle_2_company = 'ABC Alpha'
-    const about_ref_toggle_3_company = '123 Number'
+    // const about_ref_toggle_1_company = 'XYZ Corp'
+    // const about_ref_toggle_2_company = 'ABC Alpha'
+    // const about_ref_toggle_3_company = '123 Number'
 
 
     
     if (e.target.getAttribute('id') === 'about-ref-toggle-1') {
-        about_ref_content.innerText = 'I have said it before'
+        about_ref_content.innerText = 'I‘ve been to your store multiple times and I \
+                                        always love how clean, and the energy i get. I will recommend family and friends. \
+                                        Thank you!'
+
         about_ref_toggle_1.classList.add('about-ref-toggle-on') 
         referral_name.innerText = about_ref_toggle_1_name
-        referral_company.innerText = about_ref_toggle_1_company
+        // referral_company.innerText = about_ref_toggle_1_company
         referral_img.setAttribute('src', 'pic/Images/Home/Spa and Salon/Jennifer.png')
 
 
@@ -183,20 +232,26 @@ function cta(e) {
         about_ref_toggle_3.classList.remove('about-ref-toggle-on')
 
     } else if (e.target.getAttribute('id') === 'about-ref-toggle-2') {
-        about_ref_content.innerText = 'And I will say it again'
+        about_ref_content.innerText = 'From routine facial treatments to pretty much everything else,\
+                                        their team always does their best. Great results, very professional approach and very \
+                                        knowledgeable. 5 Stars for sure! Highly recommended. '
+
         about_ref_toggle_2.classList.add('about-ref-toggle-on') 
         referral_name.innerText = about_ref_toggle_2_name
-        referral_company.innerText = about_ref_toggle_2_company
+        // referral_company.innerText = about_ref_toggle_2_company
         referral_img.setAttribute('src', 'pic/Images/Home/Spa and Salon/Frank.png')
 
         about_ref_toggle_1.classList.remove('about-ref-toggle-on')
         about_ref_toggle_3.classList.remove('about-ref-toggle-on')
 
     } else if (e.target.getAttribute('id') === 'about-ref-toggle-3') {
-        about_ref_content.innerText = 'You guys are the best'
+        about_ref_content.innerText = 'So incredibly happy with my manicure and pedicure I had \
+                                        done and can’t wait to go back for more services, professional, clean, amazing service, \
+                                        and great to chat with if I could give them more than 5 stars I would!!'
+
         about_ref_toggle_3.classList.add('about-ref-toggle-on') 
         referral_name.innerText = about_ref_toggle_3_name
-        referral_company.innerText = about_ref_toggle_3_company
+        // referral_company.innerText = about_ref_toggle_3_company
         referral_img.setAttribute('src', 'pic/Images/Home/Spa and Salon/Eliza.png')
 
         about_ref_toggle_2.classList.remove('about-ref-toggle-on')
@@ -204,9 +259,17 @@ function cta(e) {
     }
 }
 
-about_ref_toggle_1.addEventListener('click', cta)
-about_ref_toggle_2.addEventListener('click', cta)
-about_ref_toggle_3.addEventListener('click', cta)
+if (about_ref_toggle_1) {
+    about_ref_toggle_1.addEventListener('click', cta)
+}
+
+if (about_ref_toggle_2) {
+    about_ref_toggle_2.addEventListener('click', cta)
+}
+
+if (about_ref_toggle_3) {
+    about_ref_toggle_3.addEventListener('click', cta)
+}
 
 
 
