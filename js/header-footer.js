@@ -90,7 +90,7 @@ function about() {
     const description = document.querySelector('.hero-subtitle')
     const bg_img = document.querySelector('.hero')
 
-    bg_img.style.background = 'rgba(31, 30, 30, 0.822) url(pic/Images/About/About\ hero.jpg);'
+    bg_img.style.background = 'rgba(31, 30, 30, 0.822) url(pic/Images/About/About\ hero.jpg)'
     title.innerText = 'Your beauty, comfort, and satisfaction are our top priority'
     description.innerText = 'Come relax in our clean hygenic environment \
     while we pamper and take good care of you. '

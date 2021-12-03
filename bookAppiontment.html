@@ -11,29 +11,29 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-    <div class="header-placeholder"></div>
+<body class="login-body">
+    <div class="container darkHeader-placeholder"></div>
 
-    <main class="container">
+    <main class="bookAppiontment container">
         <h2 class="title--h2 form-title">Fill up the form to book an appiontment with us.</h2>
-        <form action="#" class="form">
-            <div class="form-container">
-                <div class="form-booking form--modifier">
-                    <label for="" class="form--label">What would you like to book?</label> <br>
-                    
-                    <div class="form-checkbox">
-                        <input type="checkbox" name="massage" id="" value="massage">
-                        <label for="massage">Massage</label> <br>
-                        <input type="checkbox" name="facial" id="" value="facial">
-                        <label for="facial">Facial</label> <br>
-                        <input type="checkbox" name="pedi" id="" value="pedi">
-                        <label for="pedi">Pedicure</label> <br>
-                        <input type="checkbox" name="mani" id="" value="mani">
-                        <label for="mani">Manicure</label> <br>
-                    </div>
-                </div>
+        <form action="#" class="form form-container">
+            <div class="form-booking form--modifier">
+                <label for="" class="form--label">What would you like to book?</label> <br>
                 
-                <div class="form-date form--modifier">
+                <div class="form-checkbox">
+                    <input type="checkbox" name="massage" id="" value="massage">
+                    <label for="massage">Massage</label> <br>
+                    <input type="checkbox" name="facial" id="" value="facial">
+                    <label for="facial">Facial</label> <br>
+                    <!-- <input type="checkbox" name="pedi" id="" value="pedi">
+                    <label for="pedi">Pedicure</label> <br>
+                    <input type="checkbox" name="mani" id="" value="mani">
+                    <label for="mani">Manicure</label> <br> -->
+                </div>
+            </div>
+            
+            <div class="form-date form--modifier">
+                <div class="form-date-wrapper">
                     <label for="">Day:</label>
                     <select name="specialist" id="">
                         <option value=""> 1</option>
@@ -67,8 +67,10 @@
                         <option value=""> 29</option>
                         <option value=""> 30</option>
                         <option value=""> 31</option>
-                    </select> <br>
+                    </select>
+                </div> 
 
+                <div class="form-date-wrapper">
                     <label for="">Month:</label>
                     <select name="specialist" id="">
                         <option value=""> January</option>
@@ -83,33 +85,269 @@
                         <option value=""> October</option>
                         <option value=""> November</option>
                         <option value=""> December</option>
-                    </select> <br>
+                    </select> 
+                </div>
 
+                <div class="form-date-wrapper">
                     <label for="">Year:</label>
-                    <input type="text" class=""> 
+                    <input type="text" class="form-year-input"> 
                 </div>
-
-                <div class="form-time form--modifier">
-                    <label for="" class="form--label">Select your time</label> <br>
-                    <input type="text" name="" id="" class="form--input"> 
-                </div>
-
-                <div class="form-specialists form--modifier">
-                    <label for="" class="form--label">Pick a specialist</label> <br>
-                    <select name="specialist" id="" class="form--input">
-                        <option value="" > Jordyn Blake</option>
-                        <option value="" > Jennifer Hen</option>
-                        <option value="" > Cassidy Oasi</option>
-                    </select> <br>
-                </div>
-
-                <div class="form-note form--modifier">
-                    <label for="" class="form--label">Any note to leave with your specialist</label> <br>
-                    <textarea name="" id="" cols="30" rows="7" class="form--input"></textarea> <br>
-                </div>  
-
-                <input type="submit" value="Submit" class="btn form-btn">
             </div>
+
+            <div class="form-time form--modifier">
+                <label for="" class="form--label">Select your time</label> <br>
+                <input type="text" name="" id="" class="form--input"> 
+            </div>
+
+            <div class="form-specialists form--modifier">
+                <label for="" class="form--label">Pick a specialist</label> <br>
+                <select name="specialist" id="" class="form--input">
+                    <option value="" > Jordyn Blake</option>
+                    <option value="" > Jennifer Hen</option>
+                    <option value="" > Cassidy Oasi</option>
+                </select> <br>
+            </div>
+
+            <div class="form-note form--modifier">
+                <label for="" class="form--label">Any note to leave with your specialist</label> <br>
+                <textarea name="" id="" cols="30" rows="7" class="form--input"></textarea> <br>
+            </div>  
+
+            <input type="submit" value="Submit" class="btn form-btn">
+        </form>
+
+        <form action="" class="form fee-form-container">
+            <div class="fee-form">
+                <h3 class="title--h3">Manicure</h3>
+                <span>Services Includes</span>
+                <ul class="fee-manicure">
+                    <div class="fee-service">
+                        <li>
+                            <span>Classic Manicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$22</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>French Manicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$27</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>Polish Application</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$10</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>Bio gell full set</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$55</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>Bio gell refill</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$40</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li>
+                            <span>Refill with shellac</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$50</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li>
+                            <span>Classic Manicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$22</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+    
+            <div class="fee-form">
+                <h3 class="title--h3">Pedicure</h3>
+                <span>Services Includes</span>
+                <ul class="fee-manicure">
+    
+                    <div class="fee-service">
+                        <li>
+                            <span>Classic Pedicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$33</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>French Pedicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$50</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>Polish Application</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$15</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                </ul>
+            </div>
+    
+            <div class="fee-form">
+                <h3 class="title--h3">Shellac Menicure</h3>
+                <span>Services Includes</span>
+                <ul class="fee-manicure">
+    
+                    <div class="fee-service">
+                        <li>
+                            <span>Shellac Pedicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$35</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>Shellac Manicure</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$50</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="fee-service">
+                        <li >
+                            <span>Shellac Mani & Pedi</span>
+                        </li>
+                        <div class="fee-price-wrapper">
+                            <span>$80</span>
+                            <select name="specialist" id="">
+                                <option value=""> 1</option>
+                                <option value=""> 2</option>
+                                <option value=""> 3</option>
+                                <option value=""> 4</option>
+                                <option value=""> 5</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                </ul>
+            </div>
+
+            <input type="submit" value="Submit" class="btn form-btn">
         </form>
 
         <aside class="contact small-blocked">
