@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookings</title>
+    <title>Information</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <!-- <div class="container darkHeader-placeholder"></div> -->
-    <div class="container loginDarkHeader-placeholder"></div>
+    <div class=" container loginDarkHeader-placeholder">
+
+        <header class="header container">
+            <div class="header-logo">
+                <img src="/pic/icon/logo.svg" alt="" class="logo">
+                <span>PerferctHealth</span>
+            </div>
+            
+            <img src="/pic/icon/blackHam.svg" alt="" class="header-hamburger">
+        </header>
+        
+        <div class="header-nav-wrapper">
+            <span class="header-close">X</span>
+            <div class="header-nav">
+                <a href="home.html">Home</a>
+                <a href="#">About us</a>
+                <!-- <div class="services-container">
+                    <input type="button" value="Services" class="services-btn">
+                    <div class="services-dropdown">
+                        <a href="#" class="mainService">Massages</a>
+                        <a href="#" class="mainService">Facial</a>
+                        <a href="#" class="mainService">Manicure & Pedicure</a>
+                    </div>
+                </div> -->
+                
+                <a href="#">Log in</a>
+                <a href="#" class="header-btn">Sign up</a>
+            </div>
+        </div>
+
+    </div>
 
     <div class="info container">
         <div class="info-container">
@@ -23,7 +51,9 @@
             <a href="loginBookAppiontment.html" class="info-btn">Book an appiontment</a>
         </div>
 
-        <button class="info-edit info-btn">Edit</button>
+        <!-- <div class="info-edit-container">
+            <button class="info-edit info-btn">Edit</button>
+        </div> -->
     </div>
 
     <main class="customers-info  container">
@@ -31,33 +61,118 @@
             <h2 class="customers-info-title title--h2">General Information</h2>
             <div>
                 <span>
-                    Activity booked:
-                </span>
-                <span>None</span>
-            </div>
-            <div>
-                <span>
-                    Date:
+                    First Name: John
                 </span>
                 <span></span>
             </div>
             <div>
                 <span>
-                    Time Slot:
+                    Last Name: Smith 
                 </span>
                 <span></span>
             </div>
-            <div>
+            <!-- <div>
                 <span>
-                    Specialist:
+                    Age:
                 </span>
                 <span></span>
-            </div>
+            </div> -->
+            <!-- <div>
+                <span>
+                    Birth:
+                </span>
+                <span></span>
+            </div> -->
         </div>
+
+        <div class="customers-info-wrapper">
+            <h2 class="customers-info-title title--h2">Contact Information</h2>
+            <!-- <div>
+                <span>
+                    Primary phone type:
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    Primary phone:
+                </span>
+                <span></span>
+            </div> -->
+            <div>
+                <span>
+                    Email:  john.smith@gmail.com
+                </span>
+                <span></span>
+            </div>
+            <!-- <div>
+                <span>
+                    Mailing:
+                </span>
+                <span></span>
+            </div> -->
+        </div>
+<!-- 
+        <div class="customers-info-wrapper">
+            <h2 class="customers-info-title title--h2">Manage Login</h2>
+            <div>
+                <span>
+                    Username
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    Current Password:
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    New password:
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    Confirm password:
+                </span>
+                <span></span>
+            </div>
+        </div> -->
+
+        <!-- <div class="customers-info-wrapper">
+            <h2 class="customers-info-title title--h2">Emergency contact</h2>
+
+            <div>
+                <span>
+                    First emergency contact:
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    Contact phone:
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    Contact email:
+                </span>
+                <span></span>
+            </div>
+            <div>
+                <span>
+                    Contact relation:
+                </span>
+                <span></span>
+            </div>
+        </div> -->
     </main>
 
     <div class="section-margin footer-placeholder"></div>
 
-    <script type="text/javascript" src="js/header-footer.js"> </script>
+    <script src="js/header-footer.js"></script>
 </body>
 </html>

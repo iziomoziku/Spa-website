@@ -83,6 +83,8 @@ a {
     margin-bottom: 2em;
 }
 
+
+
 .small-blocked {
     display: none;
 }
@@ -887,6 +889,10 @@ a {
     align-self: center;
     justify-content: space-evenly;
     gap: 1em;
+}
+
+.customers-info-bolded {
+    font-weight: 600;
 }
 
 @media (min-width: 500px) {
