@@ -128,9 +128,9 @@ function massage() {
     const title = document.querySelector('.hero-title')
     const description = document.querySelector('.hero-subtitle')
 
-    title.innerText = 'Massage Page'
-    description.innerText = 'Lorem ipsum dolor sit amet, consectetur \
-    adipiscing elit. Gravida mattis ullamcorper neque sapien ultrices vulputate tincidunt quam.'
+    title.innerText = 'Massage'
+    description.innerText = 'Please enjoy our selection of massage options.  \
+    From deep tissue massages to Swedish and hot massages. We have what you need.'
 
 }
 
@@ -139,8 +139,8 @@ function mani_pedi() {
     const description = document.querySelector('.hero-subtitle')
 
     title.innerText = 'Manicure & Pedicure'
-    description.innerText = 'Lorem ipsum dolor sit amet, consectetur \
-    adipiscing elit. Gravida mattis ullamcorper neque sapien ultrices vulputate tincidunt quam.'
+    description.innerText = 'Please enjoy our selection of manicure & pedicure options.  \
+    From french manicures to polish pedicure application. We have what you need.'
 
 }
 
