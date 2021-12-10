@@ -245,7 +245,7 @@ function cta(e) {
 
     
     if (e.target.getAttribute('id') === 'about-ref-toggle-1') {
-        about_ref_content.innerText = 'I‘ve been to your store multiple times and I \
+        about_ref_content.innerText = 'I\'ve been to your store multiple times and I \
                                         always love how clean, and the energy i get. I will recommend family and friends. \
                                         Thank you!'
 
