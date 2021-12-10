@@ -79,8 +79,35 @@ function darkHeader() {
     });
 }
 
+function loginHeader() {
+    $(".loginDarkHeader-placeholder").load("loginDarkHeader.html", () => {
+        const ham = document.querySelector('.header-hamburger')
+        const headerWrapper = document.querySelector('.header-nav-wrapper')
+        const close = document.querySelector('.header-close')
+    
+        function navigation() {
+            headerWrapper.style.right = '0'
+            headerWrapper.style.display = 'flex'
+        }
+    
+        function closeNavigation() {
+            headerWrapper.style.right = '-66%'
+            headerWrapper.style.display = 'none'
+        }
+    
+        if (ham) {
+            ham.addEventListener('click', navigation)
+        }
+    
+        if (close) {
+            close.addEventListener('click', closeNavigation)
+        }
+    });
+}
+
 header()
 darkHeader()
+loginHeader()
 
 // $(".reference-placeholder").load("reference.html")
 
@@ -90,7 +117,7 @@ function about() {
     const description = document.querySelector('.hero-subtitle')
     const bg_img = document.querySelector('.hero')
 
-    bg_img.style.background = 'rgba(31, 30, 30, 0.822) url(pic/Images/About/About\ hero.jpg);'
+    bg_img.style.background = 'rgba(31, 30, 30, 0.822) url(pic/Images/About/About\ hero.jpg)'
     title.innerText = 'Your beauty, comfort, and satisfaction are our top priority'
     description.innerText = 'Come relax in our clean hygenic environment \
     while we pamper and take good care of you. '
@@ -232,8 +259,7 @@ function cta(e) {
         about_ref_toggle_3.classList.remove('about-ref-toggle-on')
 
     } else if (e.target.getAttribute('id') === 'about-ref-toggle-2') {
-        about_ref_content.innerText = 'From routine facial treatments to pretty much everything else,\
-                                        their team always does their best. Great results, very professional approach and very \
+        about_ref_content.innerText = 'Their team always does their best. Great results, very professional approach and very \
                                         knowledgeable. 5 Stars for sure! Highly recommended. '
 
         about_ref_toggle_2.classList.add('about-ref-toggle-on') 
