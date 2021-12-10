@@ -27,6 +27,12 @@ a {
     color: black;
 }
 
+.booking-icon {
+    width: 100%;
+    max-width: 50px;
+}
+
+
 .title--h1 {
     font-size: clamp(2rem, 3.5vw, 7rem);
     text-align: center;
@@ -56,12 +62,16 @@ a {
     color: white;
 }
 
-
-
-.container {
+.container,
+.middle-layer,
+.middle-layer-mani_pedi {
+    max-width: 2500px;
     width: 90%;
-    max-width: 1200px; 
     margin: 0 auto;
+}
+
+.large-screen-on {
+    display: none;
 }
 
 /* must be placed after .container */
@@ -83,7 +93,7 @@ a {
     background-size: cover;
     background-blend-mode:overlay;
     width: 100%;
-    min-height: 200px;
+    min-height: 300px;
 }
 
 .middle-layer-mani_pedi {
@@ -92,7 +102,7 @@ a {
     background-size: cover;
     background-blend-mode:overlay;
     width: 100%;
-    min-height: 200px;
+    min-height: 300px;
 }
 
 /* ---------------------- */
@@ -102,7 +112,7 @@ a {
 .form {
     background-color: #DFDFDF;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-    max-width: 650px;
+    max-width: 450px;
     width: 100%;
     margin: 0 auto;
     border-radius: 5px;
@@ -124,7 +134,7 @@ a {
 }
 
 .form--modifier {
-    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .form-btn {
@@ -139,16 +149,17 @@ a {
     border: none;
     color: white;
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
     padding: 0.5rem;
+    margin-top: 0.25em;
 }
 
-.form-date {
+/* .form-date {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    gap: 1em;
-}
+    padding-bottom: 1em;
+} */
 
 .form-year-input,
 .form-date-wrapper {
@@ -252,21 +263,27 @@ a {
 
 .header {
     display: flex;
-    align-items: center;
+    /* gap: 2em; */
+    /* align-items: center; */
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    padding: 0.5em 0;
+    /* padding: 0; */
+    /* margin: 0; */
+    /* width: 100%; */
+    padding: 0.5em 0; 
 
     /* position:fixed; */
 }
 
+.nav {
+    display: none;
+}
+
 .header-logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     color: white;
-} 
+    width: 80%;
+}  
 
 .darkHeader-logo {
     display: inline-flex;
@@ -275,8 +292,8 @@ a {
 }
 
 .header-hamburger {
-    width: 10%;
-    max-width: 500px;
+    width: 9%;
+    max-width: 50px;
 }
 
 .header-nav-wrapper {
@@ -324,18 +341,18 @@ a {
 
 .dropbtn {
     background-color: inherit;
-    color: black;
+    /* color: black; */
     font-size: inherit;
     border: none;
 }
 
-    /* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-    /* Dropdown Content (Hidden by Default) */
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -345,7 +362,7 @@ a {
     z-index: 1;
 }
 
-    /* Links inside the dropdown */
+/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -353,19 +370,14 @@ a {
     display: block;
 }
 
-    /* Change color of dropdown links on hover */
+/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-    /* Show the dropdown menu on hover */
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #98c499;
 }
 
 
@@ -415,22 +427,21 @@ a {
 /*          Benefit             */
 /* -------------------------   */
 
+.benefit-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5em; 
+    justify-content: center;
+}
+
 .benefit-content {
     border: 1px solid black;
     display: flex;
     align-items: center;
     padding: 1em;
     flex-direction: column;
-    /* margin: 1em 0; */
-}
-
-.benefit-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 1em;
+    max-width: 300px;
 }
 
 .content--description {
@@ -441,16 +452,20 @@ a {
 /*          services             */
 /* -------------------------   */
 
-.service-content {
-    margin: 1em 0;
-    padding: 0.5em 0;
-
+.service-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-    color: white;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
 }
+
+.service-content {
+    color: white; 
+    padding: 0.5em 1em 1.5em 1em;
+    /* width: 450px; */
+}
+
+
 
 .service--btn {
     margin-bottom: 1em;
@@ -463,34 +478,33 @@ a {
 }
 
 .service-mani-pedi {
-    background: rgba(31, 30, 30, 0.822) url(pic/Images/Manicure:pedicure/pedi.jpeg);
+    background: rgba(31, 30, 30, 0.822) url(pic/Images/Manicure_pedicure/pedi.jpeg);
     background-position:center;
     background-size: cover;
-    background-blend-mode:overlay;
-    min-height: 250px;
+    background-blend-mode: overlay;
 }
 
 .service-massage {
     background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/pexels-anthony-shkraba-6076124.jpg);
-    /* background-position:10% -150%; */
     background-position:center;
     background-size: cover;
     background-blend-mode:overlay;
-    min-height: 250px;
 }
 
-.service-facial {
-    background: rgba(31, 30, 30, 0.822) url(pic/Images/Home/Facial.jpeg);
-    /* background-position:10% -170%; */
-    background-position: center;
-    background-size: cover;
-    background-blend-mode:overlay;
-    min-height: 250px;
-}
+
 
 /*   -------------------------    */
 /*          referral             */
 /*   -------------------------   */
+
+.referral-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 1em;
+}
 
 .referral-content {
     border: 1px solid black;
@@ -525,34 +539,12 @@ a {
     align-items: flex-start;
 }
 
-.referral-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0 1em;
-}
-
-/*   ------------------------- */
-/*      about us section   */
-/*   -------------------------   */
-
-/* .about-us {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-.about-us-desc {
-    max-width: 50ch;
-}
-
 .about-us-img {
-    min-height: 400px;
-    max-width: 400px;
-} */
+    width: 100%;
+    max-width: 500px;
+}
+
+
 
 /*   ------------------------- */
 /*      about referral section   */
@@ -601,7 +593,7 @@ a {
     background-position:center;
     background-size: cover;
     background-blend-mode:overlay;
-    min-height: 250px;
+    /* min-height: 250px; */
     color: white;
 }
 
@@ -643,14 +635,17 @@ a {
     display: flex;
     gap: 1em;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .specialists-img {
     width: 30%;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 .specialists-contents-wrapper {
+    /* max-width: 850px; */
     background-color: #DDDDDD;
     padding: 0.5em 1em;
     margin-top: 1em;
@@ -735,29 +730,50 @@ a {
     justify-content:space-between;
 }
 
+.booking-form-title {
+    font-weight:600;
+    margin-bottom: 1.5em;
+
+}
+
 
 /*   ======================== */
 /*   My-info page             */
 /*   ========================   */
 
-.info {
-    display: flex;
-    flex-wrap: wrap;
-}
+.info { 
+    margin-top: 1em;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+} 
 
 .info-container {
-    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 1em;
+    /* width: 100%; */
+    margin-bottom: 0.5em;
 }
 
-.info-btn {
-    border: none;
-    padding: 0.5em 1em;
-    background-color: #BBBBBB;
+.booking-icon-title {
+    text-align: center;
 }
+
+.info-btn { 
+    border: none;
+    padding: 0.5em 0.5em;
+    background-color: #BBBBBB;
+    font-size: clamp(1rem, 2.5vw, 7rem);
+} 
 
 .info-edit {
     padding: 0.5em 0.5em;
     background-color: #089247;
+    
 }
 
 .info-text {
@@ -777,7 +793,7 @@ a {
 }
 
 
-.info-my-info {
+.info-my-info, .info-color {
     background-color: var(--primary-color);
 }
 
@@ -801,6 +817,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    max-width: 400px;
 }
 
 .login-text {
@@ -862,8 +879,7 @@ a {
 .fee-form {
     width: 95%;
     max-width: 700px;
-    margin: 0 auto;
-    padding: 1em;
+    margin: 0 0 1em 0;
 }
 
 .fee-price-wrapper {
@@ -871,4 +887,196 @@ a {
     align-self: center;
     justify-content: space-evenly;
     gap: 1em;
+}
+
+@media (min-width: 500px) {
+
+    
+
+    /* -------------------------    */
+    /*          Referral             */
+    /* -------------------------   */
+
+    .referral-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .referral-content {
+        border: 1px solid black;
+        width: 100%;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    /* -------------------------    */
+    /*          About             */
+    /* -------------------------   */
+
+    /* ------------------------- */
+    /*          What we do       */
+    /* ------------------------- */
+
+    .about-us-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    } 
+
+    .about-us-container {
+        text-align: left;
+    }
+
+    .about-us-desc, 
+    .our-journey-desc {
+        max-width: 45ch;
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .about-us-img, .our-journey-img {
+        width: 50%;
+        max-width: 850px;
+    }
+
+    /* ------------------------- */
+    /*          Our Journey       */
+    /* ------------------------- */
+
+    .our-journey {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .our-journey-wrapper {
+        display: left;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+    .large-screen-on {
+        display: flex;
+    }
+
+    .large-screen-off {
+        display: none;
+    }
+
+}
+
+@media (min-width: 790px)  {
+
+    /* -------------------------*/
+    /*          Mani & Pedi     */
+    /* -------------------------*/
+
+    /* .middle-layer-mani_pedi {
+        background: rgba(121, 121, 121, 0.822) url(pic/Images/Manicure_pedicure/Nail_polish.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode:overlay;
+        width: 100%;
+        min-height: 300px;
+    } */
+
+    /* -------------------------    */
+    /*          Header             */
+    /* -------------------------   */
+
+    .header-close,
+    .header-hamburger {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .black_nav_link {
+        color: black;
+    }
+
+    .nav_link {
+        color: white;
+    }
+
+     /* -------------------------    */
+    /*          Services             */
+    /* -------------------------   */
+
+   .service-wrapper {
+       display: flex;
+       justify-content: center;
+   }
+
+    .small-blocked {
+        display: inline-block;
+    }
+
+    .service-img {
+        width: 50%;
+        max-width: 525px;
+    }
+
+    .service-mani-pedi, .service-massage {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-around;
+        align-items: center;
+        background-image: none;
+        background-color: inherit;
+        color: black;
+    }
+
+    .service-content {
+        padding: 0;
+    }
+
+    .service-massage-desc, 
+    .service-massage {
+        text-align: right;
+    }
+
+    /* ------------------------- */
+    /*          Our Journey       */
+    /* ------------------------- */
+
+    .our-journey {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .our-journey-wrapper {
+        display: left;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+    .large-screen-on {
+        display: flex;
+    }
+
+    .large-screen-off {
+        display: none;
+    }
 }
